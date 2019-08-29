@@ -23,5 +23,7 @@ From the plot it can be observed that very high values of the regularization par
 Very low values of the regularization parameter such as 1e-08 will increase the step size of the update to a very high value. This will result in missing the global minimum of the loss function which results in the oscillation of the loss.
 From the graph we can observe that regularization value of 1e-06 is optimal for our solution since it converges quickly to the global minimum and gives the least error while compared to the other values.
 
+<img width="721" alt="PEGASOS_Batch_Sizes" src="https://user-images.githubusercontent.com/43916672/63936331-30cd6280-ca7d-11e9-8226-b360f225ba0b.png">
+
 The above second plot details the training error vs no. of iterations for different batch sizes. The batch size approximates all the points in the data set and gives an expectation of the loss is comparable to the loss acquired by gradient descent.
 While a batch size of 3000 gives low error an converges quickly, we can also observe that a batch size of 1000 gives equally good results. Taking the batch size to be as low as possible will ensure that the process of updating our weights is not computationally expensive. Since the batch size of 3000 and 1000 both give better results than other sizes, it is advisable to use a batch size of 1000.
