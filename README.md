@@ -15,6 +15,9 @@ Batch size = 1000
 Regularization parameter ‘neta’ = 0.0000010
 
 ## Results:
+
+<img width="514" alt="PEGASOS_REGULARIZATION" src="https://user-images.githubusercontent.com/43916672/63936274-0ed3e000-ca7d-11e9-98b9-e164423ba344.png">
+
 The above plot describes the training error vs no. of iterations for different regularization parameters.
 From the plot it can be observed that very high values of the regularization parameter results in almost zero update in the error. This is since the loss converges to the minimum at a very low pace such that the convergence is almost zero.
 Very low values of the regularization parameter such as 1e-08 will increase the step size of the update to a very high value. This will result in missing the global minimum of the loss function which results in the oscillation of the loss.
